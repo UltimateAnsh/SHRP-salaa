@@ -28,7 +28,5 @@
 
 ## Credits
 - Thanks [Crypton](https://t.me/cd_Crypton)
-- Thanks To The Testers For Testing It [Alpha](https://t.me/alpha_ripr),[Howwof](https://t.me/HowWof),[Pizza](https://t.me/Monster6x)
-- https://github.com/TeamWin
-- https://github.com/minimal-manifest-twrp
+- https://github.com/SHRP-Rebord
 - And to all Contributors in every repositories.
