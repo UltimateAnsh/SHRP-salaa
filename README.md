@@ -28,5 +28,5 @@
 
 ## Credits
 - Thanks [Crypton](https://t.me/cd_Crypton)
-- https://github.com/SHRP-Rebord
+- https://github.com/SHRP-Reborn
 - And to all Contributors in every repositories.
