@@ -41,7 +41,7 @@ TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_IS_64_BIT := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RMX3085,RMX3085L1,nashc
+TARGET_OTA_ASSERT_DEVICE := RMX3085
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MT6785
@@ -137,7 +137,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # System as root
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := false									  
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := false                                                                          
 BOARD_SUPPRESS_SECURE_ERASE := true
 
 # Workaround for error copying vendor files to recovery ramdisk
@@ -146,7 +146,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
-BOARD_ROOT_EXTRA_FOLDERS += metadata
+BOARD_ROOT_EXTRA_FOLDERS += metadata my_bigball my_carrier my_engineering my_heytap my_manifest my_product my_region my_stock 
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
@@ -187,6 +187,7 @@ TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1200
 TW_NO_SCREEN_BLANK := true
 TW_SCREEN_BLANK_ON_BOOT := true
+TW_INCLUDE_LOGICAL := my_product my_engineering my_company my_carrier my_region my_heytap my_stock my_preload my_bigball
 TARGET_USES_MKE2FS := true
 TW_USE_TOOLBOX:= true
 TW_OZIP_DECRYPT_KEY := 0000
@@ -194,6 +195,23 @@ TW_NO_CPU_TEMP := true
 TW_USE_LEGACY_BATTERY_SERVICES := true
 TW_EXCLUDE_TWRPAPP := true
 TW_NO_HAPTICS := true
+
+# Shrp Flags
+SHRP_DEVICE_CODE := RMX3085
+SHRP_PATH := device/realme/$(SHRP_DEVICE_CODE)
+SHRP_MAINTAINER := AshBorn
+SHRP_REC_TYPE := Normal
+SHRP_REC := /dev/block/by-name/recovery
+SHRP_HAS_RECOVERY_PARTITION := true
+SHRP_EDL_MODE := 0
+SHRP_INTERNAL := /sdcard
+SHRP_EXTERNAL := /external_sd
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 0
+SHRP_DARK := true
+SHRP_DEVICE_TYPE := A_Only
+SHRP_STATUSBAR_RIGHT_PADDING := 20
+SHRP_STATUSBAR_LEFT_PADDING := 150
 
 #properties
 TW_OVERRIDE_SYSTEM_PROPS := \
@@ -207,6 +225,3 @@ TW_INCLUDE_REPACKTOOLS := true
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
-
-# Maintainer
-TW_DEVICE_VERSION := AshBorn
