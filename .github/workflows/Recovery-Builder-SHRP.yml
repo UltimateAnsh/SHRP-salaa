@@ -16,8 +16,7 @@ on:
        required: true
        type: choice
        options:
-               - 'https://github.com/RipperHybrid/SHRP-RMX3085'
-               - 'https://github.com/AshBorn0119/SHRP-RMX3085'
+               - 'https://github.com/UltimateAnsh/SHRP-salaa'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
@@ -25,19 +24,19 @@ on:
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/realme/RMX3085'
+        default: 'device/realme/salaa'
       REALME_UI_VERSION:
         description: 'REALME_UI_VERSION'
         required: true
-        default: 'RUI3&4'
+        default: 'RUI3'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'RMX3085'
+        default: 'salaa'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_RMX3085'
+        default: 'twrp_salaa'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
