@@ -167,6 +167,8 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
    $(TARGET_OUT_SHARED_LIBRARIES)/libashmemd_client.so
 
 # TWRP specific build flags
+TW_Y_OFFSET := 60
+TW_H_OFFSET := -80
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
@@ -188,7 +190,7 @@ TW_EXCLUDE_TWRPAPP := true
 # Shrp Flags
 SHRP_DEVICE_CODE := salaa
 SHRP_PATH := device/realme/$(SHRP_DEVICE_CODE)
-SHRP_MAINTAINER := αиѕн
+SHRP_MAINTAINER := A N S H
 SHRP_REC_TYPE := Normal
 SHRP_REC := /dev/block/by-name/recovery
 SHRP_HAS_RECOVERY_PARTITION := true
