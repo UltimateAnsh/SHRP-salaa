@@ -167,8 +167,6 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
    $(TARGET_OUT_SHARED_LIBRARIES)/libashmemd_client.so
 
 # TWRP specific build flags
-TW_Y_OFFSET := 60
-TW_H_OFFSET := -80
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
