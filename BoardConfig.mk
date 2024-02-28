@@ -184,11 +184,12 @@ TW_OZIP_DECRYPT_KEY := 0000
 TW_CUSTOM_CPU_TEMP_PATH := /sys/class/power_supply/battery/temp
 TW_USE_LEGACY_BATTERY_SERVICES := true
 TW_EXCLUDE_TWRPAPP := true
+TW_FRAMERATE := 60
 
 # Shrp Flags
 SHRP_DEVICE_CODE := salaa
 SHRP_PATH := device/realme/$(SHRP_DEVICE_CODE)
-SHRP_MAINTAINER := A N S H
+SHRP_MAINTAINER := ANSH
 SHRP_REC_TYPE := Normal
 SHRP_REC := /dev/block/by-name/recovery
 SHRP_HAS_RECOVERY_PARTITION := true
