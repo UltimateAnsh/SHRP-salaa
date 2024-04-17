@@ -22,7 +22,7 @@ on:
        required: true
        type: choice
        options:
-                 - 'https://github.com/SHRP-salaa/SHRP-salaa'
+                 - 'https://github.com/UltimateAnsh/SHRP-salaa'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         type: choice
