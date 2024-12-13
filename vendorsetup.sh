@@ -22,9 +22,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         export LC_ALL="C"
 
 	# Maintaining Info
-	export OF_MAINTAINER="ANSH"
+	export OF_MAINTAINER="A N S H"
 	export FOX_VERSION=$(date +%y.%m.%d)
-	export FOX_BUILD_TYPE=COMMUNITY
+	export FOX_BUILD_TYPE=APOCALYPSE
 	
 	# Device Information
 	export FOX_ARCH=arm64
@@ -81,7 +81,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         export FOX_BASH_TO_SYSTEM_BIN=1
 	export FOX_DELETE_AROMAFM=1
         export OF_UNMOUNT_SDCARDS_BEFORE_REBOOT=1
-	
+	export OF_FORCE_DATA_FORMAT_F2FS=1
+        export OF_SUPPORT_OZIP_DECRYPTION=1
+ 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
 		export | grep "FOX" >> $FOX_BUILD_LOG_FILE
