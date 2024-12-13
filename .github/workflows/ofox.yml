@@ -165,11 +165,11 @@ jobs:
           Troubleshooting:
           If you encounter any issues during the installation:
           Logs: Include detailed logs when reporting problems.
-          Support: Contact Me [AshBorn](https://t.me/Ripper_Hybrid) for assistance.
+          Support: Contact Me [αиѕн](https://t.me/EvilAnsh) for assistance.
 
     - name: Create Artifact
       if: ${{ github.event.inputs.RELEASE_OR_ARTIFACT == 'artifact' && env.CHECK_IMG_IS_OK == 'true' && env.CHECK_ZIP_IS_OK == 'true' }}
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: recovery-artifact
         path: OrangeFox/fox_${{ github.event.inputs.MANIFEST_BRANCH }}/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/OrangeFox*.zip
