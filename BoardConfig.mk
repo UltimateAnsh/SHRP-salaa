@@ -182,6 +182,7 @@ TW_OZIP_DECRYPT_KEY := 0000
 TW_CUSTOM_CPU_TEMP_PATH := /sys/class/power_supply/battery/temp
 TW_USE_LEGACY_BATTERY_SERVICES := true
 TW_EXCLUDE_TWRPAPP := true
+TW_FRAMERATE := 90
 
 #properties
 TW_OVERRIDE_SYSTEM_PROPS := \
