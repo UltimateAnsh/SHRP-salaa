@@ -27,7 +27,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 PRODUCT_DEVICE := salaa
 PRODUCT_NAME := pb_salaa
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := Realme 7
+PRODUCT_MODEL := 7/Narzo 20 Pro/Narzo 30 4G
 PRODUCT_MANUFACTURER := realme
 
 # Shipping API level
