@@ -248,7 +248,6 @@ TW_EXCLUDE_PYTHON := false
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
 
-# Configure Status bar icons "TWRP builds only"
-TW_Y_OFFSET := 28
-TW_H_OFFSET := -28
-TW_CUSTOM_CPU_POS := 190
+# PBRP specific build flags
+PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_DISABLE_DEFAULT_TREBLE_COMP := true 
