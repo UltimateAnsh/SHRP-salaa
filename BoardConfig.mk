@@ -146,8 +146,6 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
 # Recovery
-RECOVERY_GRAPHICS_FORCE_USE_LINELENGTH := true
-BOARD_USE_FRAMEBUFFER_ALPHA_CHANNEL := true
 BOARD_SPRUPESS_EMMC_WIPE := true
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_SELECT_BUTTON := true
@@ -159,9 +157,7 @@ TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP := $(DEVICE_PATH)/vendor.prop
 TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)
 
-# Display Size & Density
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
+# Density
 TARGET_SCREEN_DENSITY := 420
 
 # Charger
@@ -224,7 +220,6 @@ TW_CUSTOM_CPU_TEMP_PATH := /sys/class/power_supply/battery/temp
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
 TW_INCLUDE_LOGICAL := my_product my_engineering my_company my_carrier my_region my_heytap my_stock my_preload my_bigball my_manifest
 TW_HAS_USB_STORAGE := true
-TW_MILITARY_TIME := true
 TW_LOAD_VENDOR_BOOT_MODULES := true
 TW_FORCE_CPUINFO_FOR_DEVICE_ID := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
