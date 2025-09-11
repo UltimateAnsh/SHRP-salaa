@@ -29,6 +29,7 @@ PRODUCT_NAME := pb_salaa
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := 7/Narzo 20 Pro/Narzo 30 4G
 PRODUCT_MANUFACTURER := realme
+TW_DEVICE_VERSION := By EvilAnsh (For Realme-UI 3.0)
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
