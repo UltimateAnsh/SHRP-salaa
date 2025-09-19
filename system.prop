@@ -1,18 +1,27 @@
-# Crypto
-ro.crypto.volume.filenames_mode=aes-256-cts
-ro.crypto.uses_fs_ioc_add_encryption_key=true
-ro.crypto.metadata.enabled=true
-ro.crypto.support_metadata_encrypt=true
-ro.crypto.volume.metadata.method=dm-default-key
-ro.crypto.dm_default_key.options_format.version=2
-ro.crypto.volume.options=::v2
-# MTK
+# Brand
+Build.BRAND=MTK
+
+# Additional System Properties
 ro.mediatek.platform=MT6785
-ro.vendor.mtk_trustonic_tee_support=1
+ro.hardware=mt6785
+
 # USB
-ro.sys.usb.bicr=no
+ro.secure=0
+ro.adb.secure=0
+ro.debuggable=1
+ro.sys.usb.bicr=yes
 ro.sys.usb.charging.only=yes
 ro.sys.usb.mtp.whql.enable=0
-ro.sys.usb.storage.type=mtp
-# Security
-ota.firmware.restriction=True
+ro.sys.usb.storage.type=mtp,mass_storage
+ro.boot.dynamic_partitions=true
+persist.sys.isUsbOtgEnabled=true
+persist.service.adb.enable=1
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
+persist.adb.nonblocking_ffs=0
+setprop persist.service.adb.enable 1
+setprop persist.service.debuggable 1
+setprop persist.sys.usb.config mtp,adb
+
+# Battery Property
+ro.charger.enable_suspend=1
