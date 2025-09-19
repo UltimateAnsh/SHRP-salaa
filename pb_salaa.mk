@@ -25,10 +25,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 PRODUCT_DEVICE := salaa
-PRODUCT_NAME := twrp_salaa
+PRODUCT_NAME := pb_salaa
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := Realme 7
+PRODUCT_MODEL := 7/Narzo 20 Pro/Narzo 30 4G
 PRODUCT_MANUFACTURER := realme
+TW_DEVICE_VERSION := By EvilAnsh (For Realme-UI 3.0)
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
