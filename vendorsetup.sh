@@ -87,6 +87,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_USE_DATA_RECOVERY_FOR_SETTINGS=1
 	export OF_VAB_ORS_WIPE_DATA_IS_FORMAT=1
 	export OF_ENABLE_FRP_ADDON=1
+	export FOX_VIRTUAL_AB_DEVICE=1
     
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
